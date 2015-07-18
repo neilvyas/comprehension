@@ -13,6 +13,8 @@ As a language, Scala offers many features which make it possible to have a reall
 ######Influencers
 Of course, [d3js](http://d3js.org/) is a primary influence; I haven't been using it for long, but I love its flexibility and its idioms, like `joins`, `scales`, `transitions`, and the like.
 
+[Seaborn](http://stanford.edu/~mwaskom/software/seaborn/) because of its sensible deafults and ease of use for statistical data visualization.
+
 The very interesting and very early [holoviews](http://ioam.github.io/holoviews/) was the first instance I saw of a library that treated plotting objects as first-class and encouraged composition to build up complex visualizations.
  
 * * * 
