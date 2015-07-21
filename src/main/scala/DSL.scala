@@ -1,3 +1,4 @@
+package com.github.comprehension
 /**
  * A more convenient syntax for plotting.
  * Note that I don't fully understand existential types (using forSome),
@@ -5,11 +6,11 @@
  */
 object DSLHelpers {
   implicit class tupleAlias[T](x: T) {
-    def as[U](role: U) = role -> x
+    def as(role: PlotOptions) = role -> x
   }
   //easier than `extends Map {`
   val using = Map
-  implicit class mapDo[A,B](x: Map[A,B]) {
+  implicit class mapDo[A](x: Map[PlotOptions, A]) {
     def plot = ???
   }
 }
