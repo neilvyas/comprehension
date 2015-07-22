@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Comprehension by neilvyas</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Comprehension</h1>
+        <p>for { comprehending your data }</p>
+
+        <p class="view"><a href="https://github.com/neilvyas/comprehension">View the Project on GitHub <small>neilvyas/comprehension</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/neilvyas/comprehension/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/neilvyas/comprehension/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/neilvyas/comprehension">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="comprehension" class="anchor" href="#comprehension" aria-hidden="true"><span class="octicon octicon-link"></span></a>comprehension</h3>
+
+<h6>
+<a id="for--comprehending-your-data-" class="anchor" href="#for--comprehending-your-data-" aria-hidden="true"><span class="octicon octicon-link"></span></a>for { comprehending your data }</h6>
+
+<hr>
+
+<p><strong>comprehension</strong> aims to be a terse, expressive Scala plotting DSL for (at the moment) <code>d3.js</code>, which will allow you to quickly generate visualizations and easily improve the interesting ones so that they can be used in presentations and products. Additionally, it avoids introducing library-specific concepts in favor of staying close to idiomatic base Scala.</p>
+
+<p>As a language, Scala offers many features which make it possible to have a really nice plotting solution, but so far, none exist. These features include:</p>
+
+<ul>
+<li>
+<strong>Implicits</strong>, which are idiomatically used for injecting configuration and context while keeping functions brief and uncluttered,</li>
+<li>
+<strong>Extremely flexible syntax</strong>, which allows for easy specification of DSLs, and, of course,</li>
+<li>
+<strong>Support for both OOP and FP</strong>, which means that we can use the <a href="https://en.wikipedia.org/wiki/Monad_(functional_programming)">M word</a> and still be taken seriously.</li>
+</ul>
+
+<hr>
+
+<h6>
+<a id="influencers" class="anchor" href="#influencers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Influencers</h6>
+
+<p>Of course, <a href="http://d3js.org/">d3js</a> is a primary influence; I haven't been using it for long, but I love its flexibility and its idioms, like <code>joins</code>, <code>scales</code>, <code>transitions</code>, and the like.</p>
+
+<p><a href="http://stanford.edu/%7Emwaskom/software/seaborn/">Seaborn</a> because of its sensible deafults and ease of use for statistical data visualization.</p>
+
+<p>The very interesting and very early <a href="http://ioam.github.io/holoviews/">holoviews</a> was the first instance I saw of a library that treated plotting objects as first-class and encouraged composition to build up complex visualizations.</p>
+
+<hr>
+
+<h6>
+<a id="alternatives" class="anchor" href="#alternatives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternatives</h6>
+
+<p>A spiritually similar solution exists in <a href="https://github.com/quantifind/wisp">WISP</a>, but my problems with WISP are that it uses Highcharts, which is not extremely flexible and also not free for enterprise, and that I don't like the workflow it uses, which is too stateful (it's more like <code>matplotlib</code>, in which successive commands will modify the "current" plot if no object is passed in). </p>
+
+<p><code>spark-notebook</code> implements some JS bindings, but those are kind of ugly, and <code>zeppelin</code> has some nice auto-plotting done for you a là Databricks, but it's difficult to get those plots out of notebooks and tweak them.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/neilvyas">neilvyas</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
