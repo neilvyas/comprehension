@@ -11,7 +11,12 @@ object DSLHelpers {
   //easier than `extends Map {`
   val using = Map
   implicit class mapDo[A](x: Map[PlotOptions, A]) {
-    def plot = ???
+    def plot(plt: PlotType) = {
+      //check if required PlotOptions have been satisfied
+      plt.checkOptions(x)
+      //proceed to plot if the above passes.
+      plt.plot(x)
+    }
   }
 }
 import DSLHelpers._
